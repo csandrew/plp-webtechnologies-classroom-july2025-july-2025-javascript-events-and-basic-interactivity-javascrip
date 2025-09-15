@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#form" class="nav-link">Form</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to My Interactive Web Page</h1>
+    <button id="themeToggle">Toggle Theme</button>
+  </section>
+
+  <!-- Form Section -->
+  <section id="form">
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <span class="error" id="nameError"></span>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter your email">
+      <span class="error" id="emailError"></span>
+
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Write your message..."></textarea>
+      <span id="charCount">0 / 200</span>
+      <span class="error" id="messageError"></span>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About This Page</h2>
+    <p>This page demonstrates custom validation, interactive navigation, 
+       theme toggle, and a live character counter using JavaScript.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
